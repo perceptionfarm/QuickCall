@@ -1,0 +1,27 @@
+<h1>Listing productsbinds</h1>
+
+<table>
+  <tr>
+    <th>Productid</th>
+    <th>Campaignid</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @productsbinds.each do |productsbind| %>
+  <tr>
+    <td><%= productsbind.productid %></td>
+    <td><%= productsbind.campaignid %></td>
+    <td><%= productsbind.status %></td>
+    <td><%= link_to 'Show', productsbind %></td>
+    <td><%= link_to 'Edit', edit_productsbind_path(productsbind) %></td>
+    <td><%= link_to 'Destroy', productsbind, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Productsbind', new_productsbind_path %>

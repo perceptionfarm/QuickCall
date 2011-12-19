@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Productid:</b>
+  <%= @productsbind.productid %>
+</p>
+
+<p>
+  <b>Campaignid:</b>
+  <%= @productsbind.campaignid %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @productsbind.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_productsbind_path(@productsbind) %> |
+<%= link_to 'Back', productsbinds_path %>

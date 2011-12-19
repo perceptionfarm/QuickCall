@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111219213154) do
+ActiveRecord::Schema.define(:version => 20111219215341) do
 
   create_table "appointments", :force => true do |t|
     t.integer  "owner"
@@ -132,6 +132,26 @@ ActiveRecord::Schema.define(:version => 20111219213154) do
     t.string   "password"
     t.integer  "level"
     t.integer  "company"
+    t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "endprice"
+    t.string   "promotermargin"
+    t.string   "companymargin"
+    t.string   "supplierprice"
+    t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "productsbinds", :force => true do |t|
+    t.integer  "productid"
+    t.integer  "campaignid"
     t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"

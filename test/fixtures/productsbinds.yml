@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  productid: 1
+  campaignid: 1
+  status: 1
+
+two:
+  productid: 1
+  campaignid: 1
+  status: 1

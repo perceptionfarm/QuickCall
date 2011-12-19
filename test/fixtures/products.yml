@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  endprice: MyString
+  promotermargin: MyString
+  companymargin: MyString
+  supplierprice: MyString
+  status: 1
+
+two:
+  name: MyString
+  description: MyString
+  endprice: MyString
+  promotermargin: MyString
+  companymargin: MyString
+  supplierprice: MyString
+  status: 1

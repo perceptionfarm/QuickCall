@@ -1,4 +1,8 @@
 Quickcall::Application.routes.draw do
+  resources :productsbinds
+
+  resources :products
+
   resources :promotersbinds
 
   resources :promoters
