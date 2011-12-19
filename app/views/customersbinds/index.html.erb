@@ -1,0 +1,29 @@
+<h1>Listing customersbinds</h1>
+
+<table>
+  <tr>
+    <th>Customerid</th>
+    <th>Companyid</th>
+    <th>Campaignid</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @customersbinds.each do |customersbind| %>
+  <tr>
+    <td><%= customersbind.customerid %></td>
+    <td><%= customersbind.companyid %></td>
+    <td><%= customersbind.campaignid %></td>
+    <td><%= customersbind.status %></td>
+    <td><%= link_to 'Show', customersbind %></td>
+    <td><%= link_to 'Edit', edit_customersbind_path(customersbind) %></td>
+    <td><%= link_to 'Destroy', customersbind, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Customersbind', new_customersbind_path %>

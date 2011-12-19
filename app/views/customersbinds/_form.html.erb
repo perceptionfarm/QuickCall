@@ -1,0 +1,33 @@
+<%= form_for(@customersbind) do |f| %>
+  <% if @customersbind.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@customersbind.errors.count, "error") %> prohibited this customersbind from being saved:</h2>
+
+      <ul>
+      <% @customersbind.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :customerid %><br />
+    <%= f.number_field :customerid %>
+  </div>
+  <div class="field">
+    <%= f.label :companyid %><br />
+    <%= f.number_field :companyid %>
+  </div>
+  <div class="field">
+    <%= f.label :campaignid %><br />
+    <%= f.number_field :campaignid %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.number_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

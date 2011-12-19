@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Customerid:</b>
+  <%= @contactaction.customerid %>
+</p>
+
+<p>
+  <b>Operator:</b>
+  <%= @contactaction.operator %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @contactaction.note %>
+</p>
+
+<p>
+  <b>Timestamp:</b>
+  <%= @contactaction.timestamp %>
+</p>
+
+<p>
+  <b>Lastupdate:</b>
+  <%= @contactaction.lastupdate %>
+</p>
+
+<p>
+  <b>Outcome:</b>
+  <%= @contactaction.outcome %>
+</p>
+
+
+<%= link_to 'Edit', edit_contactaction_path(@contactaction) %> |
+<%= link_to 'Back', contactactions_path %>

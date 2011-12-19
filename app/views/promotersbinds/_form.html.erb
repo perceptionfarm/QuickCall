@@ -1,0 +1,41 @@
+<%= form_for(@promotersbind) do |f| %>
+  <% if @promotersbind.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@promotersbind.errors.count, "error") %> prohibited this promotersbind from being saved:</h2>
+
+      <ul>
+      <% @promotersbind.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :promoterid %><br />
+    <%= f.number_field :promoterid %>
+  </div>
+  <div class="field">
+    <%= f.label :campaignid %><br />
+    <%= f.number_field :campaignid %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :customrate %><br />
+    <%= f.text_field :customrate %>
+  </div>
+  <div class="field">
+    <%= f.label :customavailability %><br />
+    <%= f.text_field :customavailability %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

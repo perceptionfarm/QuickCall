@@ -1,0 +1,33 @@
+<h1>Listing promotersbinds</h1>
+
+<table>
+  <tr>
+    <th>Promoterid</th>
+    <th>Campaignid</th>
+    <th>Status</th>
+    <th>Customrate</th>
+    <th>Customavailability</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @promotersbinds.each do |promotersbind| %>
+  <tr>
+    <td><%= promotersbind.promoterid %></td>
+    <td><%= promotersbind.campaignid %></td>
+    <td><%= promotersbind.status %></td>
+    <td><%= promotersbind.customrate %></td>
+    <td><%= promotersbind.customavailability %></td>
+    <td><%= promotersbind.notes %></td>
+    <td><%= link_to 'Show', promotersbind %></td>
+    <td><%= link_to 'Edit', edit_promotersbind_path(promotersbind) %></td>
+    <td><%= link_to 'Destroy', promotersbind, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Promotersbind', new_promotersbind_path %>

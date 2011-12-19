@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customerid: 1
+  companyid: 1
+  campaignid: 1
+  status: 1
+
+two:
+  customerid: 1
+  companyid: 1
+  campaignid: 1
+  status: 1

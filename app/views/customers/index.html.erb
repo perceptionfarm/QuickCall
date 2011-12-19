@@ -1,0 +1,95 @@
+<h1>Listing customers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Second</th>
+    <th>Email</th>
+    <th>Phone1</th>
+    <th>Phone2</th>
+    <th>Mobile</th>
+    <th>Facebook</th>
+    <th>Twitter</th>
+    <th>Addr1 street</th>
+    <th>Addr1 city</th>
+    <th>Addr1 zip</th>
+    <th>Addr1 province</th>
+    <th>Addr1 state</th>
+    <th>Addr1 country</th>
+    <th>Addr1 def</th>
+    <th>Addr1 pref</th>
+    <th>Addr2 street</th>
+    <th>Addr2 city</th>
+    <th>Addr2 zip</th>
+    <th>Addr2 province</th>
+    <th>Addr2 state</th>
+    <th>Addr2 country</th>
+    <th>Addr2 def</th>
+    <th>Addr2 pref</th>
+    <th>Birth date</th>
+    <th>Birth place</th>
+    <th>Cf</th>
+    <th>Occupation</th>
+    <th>Education</th>
+    <th>Prefered call time</th>
+    <th>Prefered visit time</th>
+    <th>Freefield1</th>
+    <th>Freefield1 label</th>
+    <th>Freefield2</th>
+    <th>Freefield2 label</th>
+    <th>Freefield3</th>
+    <th>Freefield3 label</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @customers.each do |customer| %>
+  <tr>
+    <td><%= customer.name %></td>
+    <td><%= customer.second %></td>
+    <td><%= customer.email %></td>
+    <td><%= customer.phone1 %></td>
+    <td><%= customer.phone2 %></td>
+    <td><%= customer.mobile %></td>
+    <td><%= customer.facebook %></td>
+    <td><%= customer.twitter %></td>
+    <td><%= customer.addr1_street %></td>
+    <td><%= customer.addr1_city %></td>
+    <td><%= customer.addr1_zip %></td>
+    <td><%= customer.addr1_province %></td>
+    <td><%= customer.addr1_state %></td>
+    <td><%= customer.addr1_country %></td>
+    <td><%= customer.addr1_def %></td>
+    <td><%= customer.addr1_pref %></td>
+    <td><%= customer.addr2_street %></td>
+    <td><%= customer.addr2_city %></td>
+    <td><%= customer.addr2_zip %></td>
+    <td><%= customer.addr2_province %></td>
+    <td><%= customer.addr2_state %></td>
+    <td><%= customer.addr2_country %></td>
+    <td><%= customer.addr2_def %></td>
+    <td><%= customer.addr2_pref %></td>
+    <td><%= customer.birth_date %></td>
+    <td><%= customer.birth_place %></td>
+    <td><%= customer.cf %></td>
+    <td><%= customer.occupation %></td>
+    <td><%= customer.education %></td>
+    <td><%= customer.prefered_call_time %></td>
+    <td><%= customer.prefered_visit_time %></td>
+    <td><%= customer.freefield1 %></td>
+    <td><%= customer.freefield1_label %></td>
+    <td><%= customer.freefield2 %></td>
+    <td><%= customer.freefield2_label %></td>
+    <td><%= customer.freefield3 %></td>
+    <td><%= customer.freefield3_label %></td>
+    <td><%= link_to 'Show', customer %></td>
+    <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+    <td><%= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Customer', new_customer_path %>

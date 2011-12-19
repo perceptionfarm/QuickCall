@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  price: 
+  opncampaigns: 1
+  opncustomerspercampaign: 1
+  opcustomfield: 1
+  opbackup: 1
+
+two:
+  name: MyString
+  description: MyString
+  price: 
+  opncampaigns: 1
+  opncustomerspercampaign: 1
+  opcustomfield: 1
+  opbackup: 1

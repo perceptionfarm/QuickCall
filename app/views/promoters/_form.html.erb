@@ -1,0 +1,53 @@
+<%= form_for(@promoter) do |f| %>
+  <% if @promoter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@promoter.errors.count, "error") %> prohibited this promoter from being saved:</h2>
+
+      <ul>
+      <% @promoter.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :second %><br />
+    <%= f.text_field :second %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile %><br />
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :car %><br />
+    <%= f.check_box :car %>
+  </div>
+  <div class="field">
+    <%= f.label :motorbike %><br />
+    <%= f.check_box :motorbike %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

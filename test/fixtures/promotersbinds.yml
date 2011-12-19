@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  promoterid: 1
+  campaignid: 1
+  status: 1
+  customrate: MyString
+  customavailability: MyString
+  notes: MyText
+
+two:
+  promoterid: 1
+  campaignid: 1
+  status: 1
+  customrate: MyString
+  customavailability: MyString
+  notes: MyText

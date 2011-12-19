@@ -1,0 +1,2 @@
+module CampaignPeopleHelper
+end

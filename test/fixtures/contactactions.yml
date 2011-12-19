@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customerid: 1
+  operator: 1
+  note: MyText
+  timestamp: MyString
+  lastupdate: MyString
+  outcome: MyString
+
+two:
+  customerid: 1
+  operator: 1
+  note: MyText
+  timestamp: MyString
+  lastupdate: MyString
+  outcome: MyString

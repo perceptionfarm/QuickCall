@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @campaign.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @campaign.description %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @campaign.status %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @campaign.company %>
+</p>
+
+
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%= link_to 'Back', campaigns_path %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @profile.description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @profile.price %>
+</p>
+
+<p>
+  <b>Opncampaigns:</b>
+  <%= @profile.opncampaigns %>
+</p>
+
+<p>
+  <b>Opncustomerspercampaign:</b>
+  <%= @profile.opncustomerspercampaign %>
+</p>
+
+<p>
+  <b>Opcustomfield:</b>
+  <%= @profile.opcustomfield %>
+</p>
+
+<p>
+  <b>Opbackup:</b>
+  <%= @profile.opbackup %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

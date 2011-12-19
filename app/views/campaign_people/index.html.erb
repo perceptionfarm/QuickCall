@@ -1,0 +1,27 @@
+<h1>Listing campaign_people</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Campaign</th>
+    <th>Level</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @campaign_people.each do |campaign_person| %>
+  <tr>
+    <td><%= campaign_person.user %></td>
+    <td><%= campaign_person.campaign %></td>
+    <td><%= campaign_person.level %></td>
+    <td><%= link_to 'Show', campaign_person %></td>
+    <td><%= link_to 'Edit', edit_campaign_person_path(campaign_person) %></td>
+    <td><%= link_to 'Destroy', campaign_person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Campaign person', new_campaign_person_path %>

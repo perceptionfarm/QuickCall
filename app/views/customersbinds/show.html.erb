@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Customerid:</b>
+  <%= @customersbind.customerid %>
+</p>
+
+<p>
+  <b>Companyid:</b>
+  <%= @customersbind.companyid %>
+</p>
+
+<p>
+  <b>Campaignid:</b>
+  <%= @customersbind.campaignid %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @customersbind.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_customersbind_path(@customersbind) %> |
+<%= link_to 'Back', customersbinds_path %>

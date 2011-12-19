@@ -1,0 +1,39 @@
+<h1>Listing promoters</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Second</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Mobile</th>
+    <th>Status</th>
+    <th>Rating</th>
+    <th>Car</th>
+    <th>Motorbike</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @promoters.each do |promoter| %>
+  <tr>
+    <td><%= promoter.name %></td>
+    <td><%= promoter.second %></td>
+    <td><%= promoter.email %></td>
+    <td><%= promoter.phone %></td>
+    <td><%= promoter.mobile %></td>
+    <td><%= promoter.status %></td>
+    <td><%= promoter.rating %></td>
+    <td><%= promoter.car %></td>
+    <td><%= promoter.motorbike %></td>
+    <td><%= link_to 'Show', promoter %></td>
+    <td><%= link_to 'Edit', edit_promoter_path(promoter) %></td>
+    <td><%= link_to 'Destroy', promoter, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Promoter', new_promoter_path %>

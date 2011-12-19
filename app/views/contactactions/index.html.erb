@@ -1,0 +1,33 @@
+<h1>Listing contactactions</h1>
+
+<table>
+  <tr>
+    <th>Customerid</th>
+    <th>Operator</th>
+    <th>Note</th>
+    <th>Timestamp</th>
+    <th>Lastupdate</th>
+    <th>Outcome</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @contactactions.each do |contactaction| %>
+  <tr>
+    <td><%= contactaction.customerid %></td>
+    <td><%= contactaction.operator %></td>
+    <td><%= contactaction.note %></td>
+    <td><%= contactaction.timestamp %></td>
+    <td><%= contactaction.lastupdate %></td>
+    <td><%= contactaction.outcome %></td>
+    <td><%= link_to 'Show', contactaction %></td>
+    <td><%= link_to 'Edit', edit_contactaction_path(contactaction) %></td>
+    <td><%= link_to 'Destroy', contactaction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Contactaction', new_contactaction_path %>

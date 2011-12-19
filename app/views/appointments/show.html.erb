@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Owner:</b>
+  <%= @appointment.owner %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @appointment.date %>
+</p>
+
+<p>
+  <b>Fromtime:</b>
+  <%= @appointment.fromtime %>
+</p>
+
+<p>
+  <b>Totime:</b>
+  <%= @appointment.totime %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @appointment.message %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @appointment.status %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @appointment.creator %>
+</p>
+
+
+<%= link_to 'Edit', edit_appointment_path(@appointment) %> |
+<%= link_to 'Back', appointments_path %>

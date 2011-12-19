@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @promoter.name %>
+</p>
+
+<p>
+  <b>Second:</b>
+  <%= @promoter.second %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @promoter.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @promoter.phone %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%= @promoter.mobile %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @promoter.status %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @promoter.rating %>
+</p>
+
+<p>
+  <b>Car:</b>
+  <%= @promoter.car %>
+</p>
+
+<p>
+  <b>Motorbike:</b>
+  <%= @promoter.motorbike %>
+</p>
+
+
+<%= link_to 'Edit', edit_promoter_path(@promoter) %> |
+<%= link_to 'Back', promoters_path %>

@@ -1,0 +1,2 @@
+module CustomersbindsHelper
+end
