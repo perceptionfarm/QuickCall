@@ -179,6 +179,8 @@ ActiveRecord::Schema.define(:version => 20111219215341) do
     t.string   "rating"
     t.boolean  "car"
     t.boolean  "motorbike"
+    t.string   "username"
+    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

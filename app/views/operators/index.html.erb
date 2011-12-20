@@ -6,7 +6,6 @@
     <th>Second</th>
     <th>Email</th>
     <th>Username</th>
-    <th>Password</th>
     <th>Level</th>
     <th>Company</th>
     <th>Status</th>
@@ -21,9 +20,8 @@
     <td><%= operator.second %></td>
     <td><%= operator.email %></td>
     <td><%= operator.username %></td>
-    <td><%= operator.password %></td>
     <td><%= operator.level %></td>
-    <td><%= operator.company %></td>
+    <td><%= Company.find(operator.company).name %></td>
     <td><%= operator.status %></td>
     <td><%= link_to 'Show', operator %></td>
     <td><%= link_to 'Edit', edit_operator_path(operator) %></td>

@@ -1,4 +1,7 @@
 class OperatorsController < ApplicationController
+  
+  require 'digest/md5'
+
   # GET /operators
   # GET /operators.json
   def index
@@ -40,6 +43,7 @@ class OperatorsController < ApplicationController
   # POST /operators
   # POST /operators.json
   def create
+    params[:operator][:password] = Digest::MD5.hexdigest(params[:operator][:password])
     @operator = Operator.new(params[:operator])
 
     respond_to do |format|
@@ -59,6 +63,7 @@ class OperatorsController < ApplicationController
     @operator = Operator.find(params[:id])
 
     respond_to do |format|
+      params[:operator][:password] = Digest::MD5.hexdigest(params[:operator][:password])
       if @operator.update_attributes(params[:operator])
         format.html { redirect_to @operator, :notice => 'Operator was successfully updated.' }
         format.json { head :ok }
