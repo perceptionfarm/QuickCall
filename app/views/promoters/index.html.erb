@@ -11,6 +11,9 @@
     <th>Rating</th>
     <th>Car</th>
     <th>Motorbike</th>
+    <th>Username</th>
+    <th>Password</th>
+    <th>Company</th>
     <th></th>
     <th></th>
     <th></th>
@@ -27,6 +30,9 @@
     <td><%= promoter.rating %></td>
     <td><%= promoter.car %></td>
     <td><%= promoter.motorbike %></td>
+    <td><%= promoter.username %></td>
+    <td><%= promoter.password %></td>
+    <td><%= promoter.company_id %></td>
     <td><%= link_to 'Show', promoter %></td>
     <td><%= link_to 'Edit', edit_promoter_path(promoter) %></td>
     <td><%= link_to 'Destroy', promoter, :confirm => 'Are you sure?', :method => :delete %></td>

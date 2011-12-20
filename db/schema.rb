@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111219215341) do
+ActiveRecord::Schema.define(:version => 20111220194818) do
 
   create_table "appointments", :force => true do |t|
     t.integer  "owner"
@@ -103,6 +103,7 @@ ActiveRecord::Schema.define(:version => 20111219215341) do
     t.string   "freefield2_label"
     t.string   "freefield3"
     t.string   "freefield3_label"
+    t.integer  "company_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -181,6 +182,7 @@ ActiveRecord::Schema.define(:version => 20111219215341) do
     t.boolean  "motorbike"
     t.string   "username"
     t.string   "password"
+    t.integer  "company_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -192,6 +194,14 @@ ActiveRecord::Schema.define(:version => 20111219215341) do
     t.string   "customrate"
     t.string   "customavailability"
     t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "statuses", :force => true do |t|
+    t.string   "value"
+    t.string   "label"
+    t.string   "scope"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -38,6 +38,7 @@ one:
   freefield2_label: MyString
   freefield3: MyString
   freefield3_label: MyString
+  company_id: 1
 
 two:
   name: MyString
@@ -77,3 +78,4 @@ two:
   freefield2_label: MyString
   freefield3: MyString
   freefield3_label: MyString
+  company_id: 1

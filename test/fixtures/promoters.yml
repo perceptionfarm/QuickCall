@@ -10,6 +10,9 @@ one:
   rating: MyString
   car: false
   motorbike: false
+  username: MyString
+  password: MyString
+  company_id: 1
 
 two:
   name: MyString
@@ -21,3 +24,6 @@ two:
   rating: MyString
   car: false
   motorbike: false
+  username: MyString
+  password: MyString
+  company_id: 1

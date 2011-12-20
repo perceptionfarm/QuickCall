@@ -1,4 +1,7 @@
 class PromotersController < ApplicationController
+
+  require 'digest/md5'
+
   # GET /promoters
   # GET /promoters.json
   def index
@@ -40,6 +43,7 @@ class PromotersController < ApplicationController
   # POST /promoters
   # POST /promoters.json
   def create
+    params[:promoter][:password] = Digest::MD5.hexdigest(params[:promoter][:password])
     @promoter = Promoter.new(params[:promoter])
 
     respond_to do |format|
@@ -56,6 +60,7 @@ class PromotersController < ApplicationController
   # PUT /promoters/1
   # PUT /promoters/1.json
   def update
+    params[:promoter][:password] = Digest::MD5.hexdigest(params[:promoter][:password])	
     @promoter = Promoter.find(params[:id])
 
     respond_to do |format|

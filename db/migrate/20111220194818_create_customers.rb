@@ -38,6 +38,7 @@ class CreateCustomers < ActiveRecord::Migration
       t.string :freefield2_label
       t.string :freefield3
       t.string :freefield3_label
+      t.integer :company_id
 
       t.timestamps
     end

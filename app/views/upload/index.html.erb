@@ -1,0 +1,27 @@
+<%	
+
+require 'spreadsheet'
+
+Spreadsheet.client_encoding = 'UTF-8'
+
+book = Spreadsheet.open Rails.public_path+'/import/importami.xls'
+
+sheet1 = book.worksheet 0
+
+
+dict = {}
+
+
+%>
+
+<table>
+	
+<% sheet1.each 1 do |row|	%>
+	<tr>
+	<%= row.each do |col|  %>
+
+		<td><%= col %></td>
+
+	<%  end %>
+	</tr>
+<% end %>

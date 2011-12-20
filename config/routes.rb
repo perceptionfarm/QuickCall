@@ -1,4 +1,6 @@
 Quickcall::Application.routes.draw do
+  resources :statuses
+
   resources :productsbinds
 
   resources :products
@@ -48,7 +50,7 @@ Quickcall::Application.routes.draw do
     match "login/verify"    => "login#verify"
     match "logout"          => "login#logout"
 
-
+    match "upload"	    => "upload#index"
 
 
 

@@ -10,8 +10,10 @@ class CreatePromoters < ActiveRecord::Migration
       t.string :rating
       t.boolean :car
       t.boolean :motorbike
-      t.string  :username
-      t.string  :password
+      t.string :username
+      t.string :password
+      t.integer :company_id
+
       t.timestamps
     end
   end
