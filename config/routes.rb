@@ -50,8 +50,8 @@ Quickcall::Application.routes.draw do
     match "login/verify"    => "login#verify"
     match "logout"          => "login#logout"
 
-    match "upload"	    => "upload#index"
-
+    match "upload"	    	=> "upload#index"
+	match "upload/uploadit"	=> "upload#uploadit"
 
 
 

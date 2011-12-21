@@ -1,27 +1,28 @@
 <%	
 
-require 'spreadsheet'
+	Spreadsheet.client_encoding = 'UTF-8'
 
-Spreadsheet.client_encoding = 'UTF-8'
+	book = Spreadsheet.open Rails.public_path+'/import/importami.xls'
 
-book = Spreadsheet.open Rails.public_path+'/import/importami.xls'
-
-sheet1 = book.worksheet 0
-
-
-dict = {}
-
+	sheet1 = book.worksheet 0
 
 %>
 
 <table>
-	
-<% sheet1.each 1 do |row|	%>
 	<tr>
-	<%= row.each do |col|  %>
+		<% sheet1.row(0).each do |col| %>
+			<th><%= col %></th>
+		<% end %>
+	</tr>	
 
-		<td><%= col %></td>
+	<% sheet1.each 1 do |row|	%>
+		<tr>
+		<% row.each do |col|  %>
+			<td><%= col %></td>
+		<%  end %>
+		</tr>
+	<% end %>
 
-	<%  end %>
-	</tr>
-<% end %>
+</table>
+
+<p><%= link_to "importa file", :controller => 'upload', :action => 'uploadit' %></p>

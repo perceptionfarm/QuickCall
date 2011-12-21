@@ -12,7 +12,7 @@ class LoginController < ApplicationController
         if @f.size > 0
             session[:user] = @f.first 
             session[:loggedin] = true
-
+			
             # render :partial => "gui/userbox"
             redirect_to welcome_path
         else
