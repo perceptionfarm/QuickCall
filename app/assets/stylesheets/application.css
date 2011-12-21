@@ -5,3 +5,10 @@
  *= require_self
  *= require_tree . 
 */
+
+@font-face { font-family: fontone; src: url('/assets/stylesheets/fontone.ttf'); } 
+
+body {
+	background-color: #eaeaea;
+	font-family: fontone, "Lucida Grande";
+}
