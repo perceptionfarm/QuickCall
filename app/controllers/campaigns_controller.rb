@@ -80,4 +80,5 @@ class CampaignsController < ApplicationController
       format.json { head :ok }
     end
   end
+
 end

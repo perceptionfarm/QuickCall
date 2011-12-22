@@ -14,6 +14,8 @@ class CompaniesController < ApplicationController
   # GET /companies/1.json
   def show
     @company = Company.find(params[:id])
+	@customers = Customer.where(:company_id => session[:user][:company])
+
 
     respond_to do |format|
       format.html # show.html.erb

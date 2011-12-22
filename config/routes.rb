@@ -1,4 +1,9 @@
 Quickcall::Application.routes.draw do
+
+# custom routes
+	match "customers/listall" => "customers#listall"
+
+
   resources :statuses
 
   resources :productsbinds
@@ -53,8 +58,7 @@ Quickcall::Application.routes.draw do
     match "upload"	    	=> "upload#index"
 	match "upload/uploadit"	=> "upload#uploadit"
 
-
-
+	match "manager"			=> "manager#index"
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

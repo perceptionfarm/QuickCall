@@ -22,7 +22,8 @@ class LoginController < ApplicationController
     end
 
     def logout
-        session[:loggedin] = false
+ 	    session[:user] = []
+		session[:loggedin] = false
         redirect_to login_path
     end
 
