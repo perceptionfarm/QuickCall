@@ -2,13 +2,16 @@
 
 <table>
   <tr>
-    <th>Owner</th>
+    <th>Operator</th>
+    <th>Promoter</th>
+    <th>Customer</th>
+    <th>Location</th>
+    <th>Notes</th>
     <th>Date</th>
     <th>Fromtime</th>
     <th>Totime</th>
-    <th>Message</th>
     <th>Status</th>
-    <th>Creator</th>
+    <th>Priority</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,13 +19,16 @@
 
 <% @appointments.each do |appointment| %>
   <tr>
-    <td><%= appointment.owner %></td>
+    <td><%= appointment.operator_id %></td>
+    <td><%= appointment.promoter_id %></td>
+    <td><%= appointment.customer_id %></td>
+    <td><%= appointment.location %></td>
+    <td><%= appointment.notes %></td>
     <td><%= appointment.date %></td>
     <td><%= appointment.fromtime %></td>
     <td><%= appointment.totime %></td>
-    <td><%= appointment.message %></td>
     <td><%= appointment.status %></td>
-    <td><%= appointment.creator %></td>
+    <td><%= appointment.priority %></td>
     <td><%= link_to 'Show', appointment %></td>
     <td><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
     <td><%= link_to 'Destroy', appointment, :confirm => 'Are you sure?', :method => :delete %></td>

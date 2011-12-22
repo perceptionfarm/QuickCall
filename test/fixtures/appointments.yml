@@ -1,19 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  owner: 1
+  operator_id: 1
+  promoter_id: 1
+  customer_id: 1
+  location: MyText
+  notes: MyText
   date: MyString
   fromtime: MyString
   totime: MyString
-  message: MyText
   status: 1
-  creator: 1
+  priority: 1
 
 two:
-  owner: 1
+  operator_id: 1
+  promoter_id: 1
+  customer_id: 1
+  location: MyText
+  notes: MyText
   date: MyString
   fromtime: MyString
   totime: MyString
-  message: MyText
   status: 1
-  creator: 1
+  priority: 1

@@ -1,8 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Owner:</b>
-  <%= @appointment.owner %>
+  <b>Operator:</b>
+  <%= @appointment.operator_id %>
+</p>
+
+<p>
+  <b>Promoter:</b>
+  <%= @appointment.promoter_id %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @appointment.customer_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @appointment.location %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @appointment.notes %>
 </p>
 
 <p>
@@ -21,18 +41,13 @@
 </p>
 
 <p>
-  <b>Message:</b>
-  <%= @appointment.message %>
-</p>
-
-<p>
   <b>Status:</b>
   <%= @appointment.status %>
 </p>
 
 <p>
-  <b>Creator:</b>
-  <%= @appointment.creator %>
+  <b>Priority:</b>
+  <%= @appointment.priority %>
 </p>
 
 

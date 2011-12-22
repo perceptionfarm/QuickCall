@@ -10,16 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111220194818) do
+ActiveRecord::Schema.define(:version => 20111222102104) do
 
   create_table "appointments", :force => true do |t|
-    t.integer  "owner"
+    t.integer  "operator_id"
+    t.integer  "promoter_id"
+    t.integer  "customer_id"
+    t.text     "location"
+    t.text     "notes"
     t.string   "date"
     t.string   "fromtime"
     t.string   "totime"
-    t.text     "message"
     t.integer  "status"
-    t.integer  "creator"
+    t.integer  "priority"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

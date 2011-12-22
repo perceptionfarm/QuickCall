@@ -12,8 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :owner %><br />
-    <%= f.number_field :owner %>
+    <%= f.label :operator_id %><br />
+    <%= f.number_field :operator_id %>
+  </div>
+  <div class="field">
+    <%= f.label :promoter_id %><br />
+    <%= f.number_field :promoter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_id %><br />
+    <%= f.number_field :customer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_area :location %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
   </div>
   <div class="field">
     <%= f.label :date %><br />
@@ -28,16 +44,12 @@
     <%= f.text_field :totime %>
   </div>
   <div class="field">
-    <%= f.label :message %><br />
-    <%= f.text_area :message %>
-  </div>
-  <div class="field">
     <%= f.label :status %><br />
     <%= f.number_field :status %>
   </div>
   <div class="field">
-    <%= f.label :creator %><br />
-    <%= f.number_field :creator %>
+    <%= f.label :priority %><br />
+    <%= f.number_field :priority %>
   </div>
   <div class="actions">
     <%= f.submit %>
